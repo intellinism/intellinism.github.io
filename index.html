@@ -324,7 +324,7 @@
                 
               
 
-              <time title="Created: 2019-07-14 22:51:22 / Modified: 23:18:53" itemprop="dateCreated datePublished" datetime="2019-07-14T22:51:22+08:00">2019-07-14</time>
+              <time title="Created: 2019-07-14 22:51:22 / Modified: 23:25:04" itemprop="dateCreated datePublished" datetime="2019-07-14T22:51:22+08:00">2019-07-14</time>
             </span>
           
 
@@ -388,22 +388,33 @@
 <li>hexo s</li>
 <li>localhost:4000 查看</li>
 </ul>
-<h1 id="更换主题，域名问题，发布网页"><a href="#更换主题，域名问题，发布网页" class="headerlink" title="更换主题，域名问题，发布网页"></a>更换主题，域名问题，发布网页</h1><ul>
+<h1 id="更换主题"><a href="#更换主题" class="headerlink" title="更换主题"></a>更换主题</h1><ul>
 <li>git clone <a href="https://github.com/theme-next/hexo-theme-next.git" target="_blank" rel="noopener">https://github.com/theme-next/hexo-theme-next.git</a> themes/next</li>
 <li>修改根目录下的_config.yml的theme为next</li>
 <li>进入themes/next，修改_config.yml的scheme为Muse或者Mist或者其他</li>
 <li>修改_config.yml的language为zh-Hans，修改author和url</li>
-<li>修改_config.yml的deploy内容,添加repo:<a href="https://github.com/xxx/xxx.github.io" target="_blank" rel="noopener">https://github.com/xxx/xxx.github.io</a>, branch:master</li>
+</ul>
+<h1 id="网页发布"><a href="#网页发布" class="headerlink" title="网页发布"></a>网页发布</h1><ul>
+<li>修改_config.yml的deploy内容,添加:</li>
+<li>type: git</li>
+<li>repo: <a href="https://github.com/xxx/xxx.github.io" target="_blank" rel="noopener">https://github.com/xxx/xxx.github.io</a></li>
+<li>branch: master</li>
 <li>添加CNAME到source，内容为xxx.com</li>
 <li>hexo clean</li>
 <li>hexo g</li>
 <li>hexo d</li>
 <li>查看xxx.com验证发布的网页内容</li>
+</ul>
+<h1 id="提交博客"><a href="#提交博客" class="headerlink" title="提交博客"></a>提交博客</h1><ul>
 <li>验证通过便可以push备份博客内容</li>
 <li>git status</li>
 <li>git add .</li>
 <li>git commit -a </li>
 <li>git push origin master</li>
+</ul>
+<h1 id="两个仓库"><a href="#两个仓库" class="headerlink" title="两个仓库"></a>两个仓库</h1><ul>
+<li>发布仓库：<a href="https://github.com/xxx/xxx.github.io.git" target="_blank" rel="noopener">https://github.com/xxx/xxx.github.io.git</a></li>
+<li>内容仓库：<a href="https://github.com/xxx/blog.git" target="_blank" rel="noopener">https://github.com/xxx/blog.git</a></li>
 </ul>
 
           
